@@ -2338,3 +2338,72 @@ a:hover {
 .blur:focus {
 	filter: blur(0);
 }
+
+.devlog-author-hero {
+	margin-top: 2.5rem;
+}
+
+.devlog-author-image-wrapper {
+	position: relative;
+	width: 100%;
+	max-width: 960px;
+	/* optional: auf Panel-Breite begrenzen */
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 0.5rem;
+}
+
+.devlog-author-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}
+
+/* leichte Abdunklung über dem Bild für bessere Lesbarkeit */
+.devlog-author-overlay {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to bottom right,
+			rgba(0, 0, 0, 0.6),
+			rgba(0, 0, 0, 0.3));
+}
+
+/* Text oben links auf dem Bild */
+.devlog-author-text {
+	position: absolute;
+	top: 1.5rem;
+	left: 1.5rem;
+	max-width: 60%;
+	color: #ffffff;
+	z-index: 2;
+}
+
+.devlog-author-text h3 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.3rem;
+	font-weight: 700;
+}
+
+.devlog-author-text p {
+	margin: 0;
+	font-size: 0.95rem;
+	line-height: 1.6;
+}
+
+/* Responsive Anpassung für Handy */
+@media screen and (max-width: 736px) {
+	.devlog-author-text {
+		top: 1rem;
+		left: 1rem;
+		max-width: 80%;
+	}
+
+	.devlog-author-text h3 {
+		font-size: 1.1rem;
+	}
+
+	.devlog-author-text p {
+		font-size: 0.9rem;
+	}
+}
