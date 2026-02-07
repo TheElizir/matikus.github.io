@@ -2391,6 +2391,39 @@ a:hover {
 	line-height: 1.6;
 }
 
+.kofi-wrapper {
+	text-align: center;
+}
+
+.reco-list {
+	list-style: none;
+	padding: 0;
+	margin: 2em 0;
+}
+
+.reco-list li {
+	display: flex;
+	align-items: center;
+	padding: 0.75em 1em;
+	border-radius: 4px;
+	background: rgba(0, 0, 0, 0.03);
+	margin-bottom: 0.75em;
+}
+
+.reco-list .icon {
+	margin-right: 0.75em;
+	font-size: 1.4em;
+}
+
+.reco-name {
+	flex: 1;
+	font-weight: 600;
+}
+
+.reco-list a {
+	white-space: nowrap;
+}
+
 /* Responsive Anpassung für Handy */
 @media screen and (max-width: 736px) {
 	.devlog-author-text {
