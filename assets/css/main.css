@@ -2424,6 +2424,38 @@ a:hover {
 	white-space: nowrap;
 }
 
+.pcloud-button {
+	background: #63ccd8;
+	/* deutlich heller als Logo */
+	color: #ffffff !important;
+	border-radius: 999px;
+	padding: 0.4em 1.4em;
+	font-size: 0.9rem;
+	font-weight: 600;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6em;
+	border: none;
+	text-decoration: none;
+}
+
+.pcloud-button:hover {
+	background: #70d0db;
+	/* noch hellere Hover-Farbe */
+	text-decoration: none;
+}
+
+.pcloud-icon {
+	height: 1.2em;
+	width: auto;
+	display: block;
+}
+
+.pcloud-wrapper {
+	text-align: center;
+}
+
+
 /* Responsive Anpassung für Handy */
 @media screen and (max-width: 736px) {
 	.devlog-author-text {
