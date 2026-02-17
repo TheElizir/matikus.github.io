@@ -1957,13 +1957,15 @@ ul.actions li:first-child {
 	height: 2.25em;
 	line-height: 2.25em;
 	left: 50%;
+	transform: translateX(-50%);
 	opacity: 0;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
 	-ms-transition: opacity .25s ease-in-out;
 	transition: opacity .25s ease-in-out;
-	width: 5.5em;
-	margin-left: -2.75em;
+	width: auto;
+	padding: 0 0.75em;
+	white-space: nowrap;
 }
 
 #nav a span:after {
