@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     function getTargetFromHash(hash) {
         switch (hash) {
             case 'rec':
+                return '#recommendations';
+            case 'recommendation':
                 return 'redirects/recommendations.html#recommendations';
             default:
                 return 'index.html';
